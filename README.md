@@ -55,15 +55,19 @@ It processes real-time data using a webcam, detects objects and faces, and provi
 
 ## ▶️ How to Run the Project
 
-```bash
-pip install opencv-python ultralytics fastapi uvicorn
-🔹 Step 2: Run Face Detection Module
-python face_tracking.py
-🔹 Step 3: Run Object Detection Module
-python yolo_detection.py
-🔹 Step 4: Start API Server
-uvicorn main:app --reload
-
 ### 🔹 Step 1: Install Required Libraries
 ```bash
 pip install opencv-python ultralytics fastapi uvicorn
+```
+### 🔹 Step 2:Run Face Detection Module
+```bash
+python face_tracking.py
+```
+### 🔹 Step 3:Run Object Detection Module
+```bash
+python yolo_detection.py
+```
+### 🔹 Step 4:Start API Server
+```bash
+uvicorn main:app --reload
+```
