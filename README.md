@@ -2,14 +2,14 @@ The system captures video from a webcam, detects faces, tracks their movement, a
 
 #🎯 Features
 
-🎥 Real-time webcam video processing
-🙂 Face detection using Haar Cascade
-📍 Face movement tracking (dx, dy)
-⚠️ Detects when face leaves the frame
-🔢 Frame-by-frame video analysis
-🛠️ Technologies Used
-Python
-OpenCV
+🎥 Real-time webcam video processing.
+🙂 Face detection using Haar Cascade.
+📍 Face movement tracking (dx, dy).
+⚠️ Detects when face leaves the frame.
+🔢 Frame-by-frame video analysis.
+🛠️ Technologies Used.
+Python.
+OpenCV.
 
 ##📦 Installation
 
