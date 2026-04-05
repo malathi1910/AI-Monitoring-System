@@ -1,56 +1,91 @@
-The system captures video from a webcam, detects faces, tracks their movement, and identifies when the face goes out of frame.
 
-#🎯 Features
+---
 
-- 🎥 Real-time webcam video processing.
-- 🙂 Face detection using Haar Cascade.
-- 📍 Face movement tracking (dx, dy).
-- ⚠️ Detects when face leaves the frame.
-- 🔢 Frame-by-frame video analysis.
-- 🛠️ Technologies Used.
-- Python.
-- OpenCV.
+## 🎯 1. OpenCV (Computer Vision Basics)
 
-##📦 Installation
+### 📚 Concepts Covered
+- Image & video processing  
+- Face detection  
+- Object tracking basics  
+- Frame-by-frame video analysis  
 
-Clone the repository:
-git clone https://github.com/your-username/face-tracking-opencv.git
-Navigate to project folder:
-cd face-tracking-opencv
-Install dependencies:
-pip install opencv-python
+### 🛠️ Practice Task
+- Detect face using webcam  
+- Track face movement  
+- Detect if face goes out of frame  
 
-##▶️ Usage
+### 📦 Mini Output
+- Python script  
+- Demo video (screen recording)  
 
-Run the script:
+---
 
-python face_tracking.py
-📷 Output
-Webcam window opens
-Face is detected with bounding box
-Movement (dx, dy) is displayed
-Frame count shown
-Alert appears when face is not detected
+## 🚀 2. YOLOv8 (Object Detection)
 
-##🧠 How It Works
+### 📚 Concepts Covered
+- What is object detection  
+- How YOLO works  
+- Pretrained models  
 
-Captures video using webcam
-Converts each frame to grayscale
-Detects face using Haar Cascade classifier
-Tracks face center position
-Calculates movement between frames
-Displays results in real-time
+### 🛠️ Practice Task
+- Detect objects (person, phone, etc.)  
+- Count number of people in frame  
 
-##🚀 Future Improvements
+### 📦 Mini Output
+- Detection script  
+- Screenshot/video of output  
 
-Multi-face tracking
-Face recognition
-Emotion detection
-Integration with AI models (MediaPipe / YOLO)
+---
 
-##📌 Applications
+## 🔗 3. APIs (FastAPI + Integration Basics)
 
-Security systems
-Attendance monitoring
-Human-computer interaction
-Surveillance systems
+### 📚 Concepts Covered
+- What is REST API  
+- Request/Response cycle  
+- JSON structure  
+
+### 🛠️ Practice Task
+- Create simple FastAPI app:
+  - `/test` endpoint  
+  - `/submit` endpoint (accept JSON)  
+- Use Postman to test APIs  
+
+### 📦 Mini Output
+- Working API code  
+- Postman screenshots  
+
+---
+
+## 🤖 4. LLMs (GPT / AI Evaluation Basics)
+
+### 📚 Concepts Covered
+- What is LLM  
+- Prompt → Response system  
+- Structured output (JSON)  
+
+### 🛠️ Practice Task
+- Create evaluation prompt:
+  - Input: Answer  
+  - Output: Score (correct/wrong)  
+- Simulate evaluation logic  
+
+### 📦 Mini Output
+- Prompt design  
+- Sample input/output  
+
+---
+
+## 🛠️ Technologies Used
+- Python  
+- OpenCV  
+- YOLOv8 (Ultralytics)  
+- FastAPI  
+- Postman  
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Install Dependencies
+```bash
+pip install opencv-python fastapi uvicorn ultralytics
