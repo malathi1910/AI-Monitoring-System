@@ -1,77 +1,46 @@
+# 🤖 Smart AI Monitoring System
 
 ---
 
-## 🎯 1. OpenCV (Computer Vision Basics)
+## 📌 Project Overview
 
-### 📚 Concepts Covered
-- Image & video processing  
-- Face detection  
-- Object tracking basics  
-- Frame-by-frame video analysis  
-
-### 🛠️ Practice Task
-- Detect face using webcam  
-- Track face movement  
-- Detect if face goes out of frame  
-
-### 📦 Mini Output
-- Python script  
-- Demo video (screen recording)  
+This project is an AI-powered monitoring system designed to demonstrate practical implementation of **Computer Vision, Object Detection, API Development, and AI-based evaluation**.  
+It processes real-time data using a webcam, detects objects and faces, and provides structured outputs through APIs.
 
 ---
 
-## 🚀 2. YOLOv8 (Object Detection)
+## 🚀 Key Features
 
-### 📚 Concepts Covered
-- What is object detection  
-- How YOLO works  
-- Pretrained models  
-
-### 🛠️ Practice Task
-- Detect objects (person, phone, etc.)  
-- Count number of people in frame  
-
-### 📦 Mini Output
-- Detection script  
-- Screenshot/video of output  
+### 👀 1. Face Detection & Tracking (OpenCV)
+- Detects human faces in real-time using webcam  
+- Tracks face position across frames  
+- Highlights face with bounding box  
+- Generates alert when face is not visible  
 
 ---
 
-## 🔗 3. APIs (FastAPI + Integration Basics)
-
-### 📚 Concepts Covered
-- What is REST API  
-- Request/Response cycle  
-- JSON structure  
-
-### 🛠️ Practice Task
-- Create simple FastAPI app:
-  - `/test` endpoint  
-  - `/submit` endpoint (accept JSON)  
-- Use Postman to test APIs  
-
-### 📦 Mini Output
-- Working API code  
-- Postman screenshots  
+### 🤖 2. Object Detection System (YOLOv8)
+- Identifies multiple objects (person, phone, etc.)  
+- Performs real-time detection  
+- Counts number of people in the frame  
+- Displays labels with confidence scores  
 
 ---
 
-## 🤖 4. LLMs (GPT / AI Evaluation Basics)
+### 🌐 3. REST API Backend (FastAPI)
+- `/` endpoint → Welcome message  
+- `/test` endpoint → verifies API functionality  
+- `/submit` endpoint → accepts and processes JSON input  
+- Returns structured JSON responses  
 
-### 📚 Concepts Covered
-- What is LLM  
-- Prompt → Response system  
-- Structured output (JSON)  
+---
 
-### 🛠️ Practice Task
-- Create evaluation prompt:
-  - Input: Answer  
-  - Output: Score (correct/wrong)  
-- Simulate evaluation logic  
-
-### 📦 Mini Output
-- Prompt design  
-- Sample input/output  
+### 🧠 4. AI Evaluation Module (LLM Logic)
+- Accepts user input as answer  
+- Compares with predefined correct answer  
+- Outputs result in structured format:
+  - ✅ correct  
+  - ❌ wrong  
 
 ---
 
@@ -80,12 +49,21 @@
 - OpenCV  
 - YOLOv8 (Ultralytics)  
 - FastAPI  
-- Postman  
+- Uvicorn  
 
 ---
 
-## ▶️ How to Run
+## ▶️ How to Run the Project
 
-### 1️⃣ Install Dependencies
 ```bash
-pip install opencv-python fastapi uvicorn ultralytics
+pip install opencv-python ultralytics fastapi uvicorn
+🔹 Step 2: Run Face Detection Module
+python face_tracking.py
+🔹 Step 3: Run Object Detection Module
+python yolo_detection.py
+🔹 Step 4: Start API Server
+uvicorn main:app --reload
+
+### 🔹 Step 1: Install Required Libraries
+```bash
+pip install opencv-python ultralytics fastapi uvicorn
